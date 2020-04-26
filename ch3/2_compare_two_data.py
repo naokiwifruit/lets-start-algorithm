@@ -1,8 +1,8 @@
 def compare_two_data(a, b):
     """
-    :type a:int
-    :type b:int
-    :rtype: int
+    :type a: float
+    :type b: float
+    :rtype: float or str
     """
     if a > b:
         return a
