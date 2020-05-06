@@ -4,6 +4,7 @@ def search_max_value(array):
     :rtype: float
     """
     max_value = array[0]
+    length = len(array)
     i = 1
     while i < 5:
         if array[i] > max:

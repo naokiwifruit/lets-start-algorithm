@@ -1,13 +1,15 @@
-def linear_search(array):
+def linear_search(array, target):
     """
     :type array: List[int]
+    :type target: int
     :rtype: str
     """
+    length = len(array)
     i = 0
-    while i < 5:
-        if array[i] == 5:
-            return '{}番目の要素が一致'.format(i)
+    while i < length:
+        if array[i] == target:
+            return i
         else:
             i += 1
     else:
-        return '見つかりませんでした'
+        return -1
