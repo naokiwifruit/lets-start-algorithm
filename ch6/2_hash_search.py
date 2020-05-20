@@ -4,12 +4,12 @@ def hash_search(arrayH, target):
     :type target: int
     :rtype k: int
     """
-    size = len(arrayH)
-    k = target % size
+    length = len(arrayH)
+    k = target % length
     while arrayH[k] != 0:
         if arrayH[k] == target:
             return k
         else:
-            k = (k + 1) % size
+            k = (k + 1) % length
     else:
         return -1

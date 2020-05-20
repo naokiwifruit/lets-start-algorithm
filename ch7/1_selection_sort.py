@@ -3,18 +3,15 @@ def selection_sort(array):
     :type array: List [int]
     :rtype array: List[int]
     """
+    length = len(array)
     i = 0
-    while i < len(array) - 1:
+    while i < length - 1:
         indexMin = i
         k = i + 1
-        while k < len(array):
+        while k < length:
             if array[k] < array[indexMin]:
                 indexMin = k
-            else:
-                k += 1
-        w = array[i]
-        array[i] = array[indexMin]
-        array[indexMin] = w
-        
+            k += 1
+        array[i], array[indexMin] = array[indexMin], array[i]
         i += 1
     return array
