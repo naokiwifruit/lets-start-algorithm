@@ -20,4 +20,4 @@ def sieve_of_eratosthenes(n):
         if array[i] == 1:
             prime_numbers.append(i)
         i += 1
-    return prime_numbers
+    return prime_numbers_
