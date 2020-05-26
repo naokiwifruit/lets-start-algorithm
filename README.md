@@ -4,4 +4,4 @@ Python codes implementing algorithms described in Ito's book ["アルゴリズ�
 ## environment
 ```
 Python 3.7.6
-```
+```　　
